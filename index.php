@@ -3,9 +3,6 @@
 require_once 'vendor/autoload.php';
 require_once 'src/Stopwatch.php';
 
-$dotenv = new Dotenv\Dotenv(__DIR__);
-$dotenv->load();
-
 $mysqli = new mysqli(getenv('OPENSHIFT_MYSQL_DB_HOST'), getenv('OPENSHIFT_MYSQL_DB_USERNAME'), getenv('OPENSHIFT_MYSQL_DB_PASSWORD'), 'stopwatch');
 if (!empty($mysqli->connect_errno)) {
     throw new \Exception($mysqli->connect_error, $mysqli->connect_errno);
