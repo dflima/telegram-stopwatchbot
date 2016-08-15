@@ -6,7 +6,7 @@ require_once 'src/Stopwatch.php';
 $dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
-$mysqli = new mysqli(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASS'), getenv('DB_NAME'));
+$mysqli = new mysqli(getenv('OPENSHIFT_MYSQL_DB_HOST'), getenv('OPENSHIFT_MYSQL_DB_USERNAME'), getenv('OPENSHIFT_MYSQL_DB_PASSWORD'), 'stopwatch');
 if (!empty($mysqli->connect_errno)) {
     throw new \Exception($mysqli->connect_error, $mysqli->connect_errno);
 }
