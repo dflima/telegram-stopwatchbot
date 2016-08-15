@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "61833c4d60ddc520557c3296d6c5ca61",
-    "content-hash": "46cce09582cad1d3c86aea27cc9d1a4f",
+    "hash": "1a0861f01f1c77995dea40bd58a444eb",
+    "content-hash": "a18ce8fbac084277a532d5b8ffad0c2c",
     "packages": [
         {
             "name": "telegram-bot/api",
-            "version": "v2.2.4",
+            "version": "v1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TelegramBot/Api.git",
-                "reference": "d4b883c53bc622e01d5582f6ff754ef9a8c001ad"
+                "reference": "a0bd3bea39a6f01a0e8a79d054d596b6ededbc3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TelegramBot/Api/zipball/d4b883c53bc622e01d5582f6ff754ef9a8c001ad",
-                "reference": "d4b883c53bc622e01d5582f6ff754ef9a8c001ad",
+                "url": "https://api.github.com/repos/TelegramBot/Api/zipball/a0bd3bea39a6f01a0e8a79d054d596b6ededbc3a",
+                "reference": "a0bd3bea39a6f01a0e8a79d054d596b6ededbc3a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=5.3.0"
             },
             "require-dev": {
                 "codeception/codeception": "*",
@@ -60,32 +60,32 @@
                 "php",
                 "telegram"
             ],
-            "time": "2015-12-18 09:12:31"
+            "time": "2015-08-17 11:55:00"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.3.0",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a"
+                "reference": "058b9b03b945b6c3eced241935c45822fd2bf4e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9ca5644c536654e9509b9d257f53c58630eb2a6a",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/058b9b03b945b6c3eced241935c45822fd2bf4e8",
+                "reference": "058b9b03b945b6c3eced241935c45822fd2bf4e8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.3.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8 || ^5.0"
+                "phpunit/phpunit": "~4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -95,7 +95,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3-Clause-Attribution"
+                "BSD"
             ],
             "authors": [
                 {
@@ -105,12 +105,13 @@
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "homepage": "http://github.com/vlucas/phpdotenv",
             "keywords": [
                 "dotenv",
                 "env",
                 "environment"
             ],
-            "time": "2016-06-14 14:14:52"
+            "time": "2015-05-29 20:43:19"
         }
     ],
     "packages-dev": [],
