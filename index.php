@@ -6,12 +6,12 @@ require_once 'src/Stopwatch.php';
 $dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
-$url = parse_url(getenv('CLEARDB_DATABASE_URL');
+$url = parse_url(getenv('JAWSDB_URL');
 
 $server = $url['host'];
 $username = $url['user'];
 $password = $url['pass'];
-$db_name = substr($url['path'], 1);
+$db_name = ltrim($url['path'], '/');
 
 $mysqli = new mysqli($server, $username, $password, $db_name);
 if (!empty($mysqli->connect_errno)) {
