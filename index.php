@@ -3,9 +3,6 @@
 require_once 'vendor/autoload.php';
 require_once 'src/Stopwatch.php';
 
-$dotenv = new Dotenv\Dotenv(__DIR__);
-$dotenv->load();
-
 $url = parse_url(getenv('JAWSDB_URL'));
 
 $server = $url['host'];
