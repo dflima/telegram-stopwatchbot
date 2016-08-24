@@ -6,7 +6,14 @@ require_once 'src/Stopwatch.php';
 $dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
-$mysqli = new mysqli(getenv('DB_HOST'), getenv('DB_USER'), getenv('DB_PASS'), getenv('DB_NAME'));
+$url = parse_url(getenv('CLEARDB_DATABASE_URL');
+
+$server = $url['host'];
+$username = $url['user'];
+$password = $url['pass'];
+$db_name = substr($url['path'], 1);
+
+$mysqli = new mysqli($server, $username, $password, $db_name);
 if (!empty($mysqli->connect_errno)) {
     throw new \Exception($mysqli->connect_error, $mysqli->connect_errno);
 }
