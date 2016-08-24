@@ -1,6 +1,13 @@
 {
+    "name": "dflima/stopwatch-bot",
+    "description": "Telegram Stopwatch Bot",
+    "authors": [
+        {
+            "name": "Danilo Lima",
+            "email": "danlima69@gmail.com"
+        }
+    ],
     "require": {
-        "telegram-bot/api": "1.2.3",
-        "vlucas/phpdotenv": "2.0"
+        "telegram-bot/api": "~2.2"
     }
 }
